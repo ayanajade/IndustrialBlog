@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Staff - Alejo's Blog</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="blog.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa;
+            line-height: 1.6;
+        }
+        .staff-header {
+            background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
+            color: white;
+            padding: 80px 0 60px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .staff-title {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .staff-subtitle {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .staff-card {
+            text-align: center;
+            padding: 20px 15px;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            height: 100%;
+            background: white;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.06);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            height: 100%;
+        }
+        .staff-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+        }
+        .staff-img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #fff;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            margin: 0 auto 20px;
+            display: block;
+            transition: all 0.3s ease;
+        }
+        .staff-card:hover .staff-img {
+            transform: scale(1.05);
+        }
+        .staff-name {
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: #2c3e50;
+            margin: 15px 0 5px;
+            line-height: 1.3;
+            width: 100%;
+        }
+        .staff-position {
+            color: #ff6b6b;
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            font-size: 0.85rem;
+            margin: 0 0 15px;
+            line-height: 1.4;
+            width: 100%;
+        }
+        .staff-bio {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+        .social-links {
+            margin-top: 20px;
+        }
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            background: #f8f9fa;
+            border-radius: 50%;
+            color: #6c757d;
+            margin: 0 4px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .social-links a:hover {
+            background: #ff6b6b;
+            color: white;
+            transform: translateY(-3px) scale(1.1);
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            background: #ff6b6b;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-pink text-white py-3">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <h1 class="blog-title m-0">
+                    <a href="blog.html" class="text-white text-decoration-none">Alejo's Blog</a>
+                </h1>
+                <div class="d-flex align-items-center">
+                    <a href="blog.html" class="nav-link text-white mx-3" style="font-family: 'Inter', sans-serif; font-size: 1.3rem; font-weight: 500;">Home</a>
+                    <div class="nav-item dropdown mx-3">
+                        <a class="nav-link dropdown-toggle text-white" href="blog.html" id="industrialVisitDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-family: 'Inter', sans-serif; font-size: 1.3rem; font-weight: 500;">
+                            Industrial Visit
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="industrialVisitDropdown">
+                            <li><a class="dropdown-item" href="index.html#day1">Day 1</a></li>
+                            <li><a class="dropdown-item" href="index.html#day2">Day 2</a></li>
+                            <li><a class="dropdown-item" href="index.html#day3">Day 3</a></li>
+                            <li><a class="dropdown-item" href="index.html#day4">Day 4</a></li>
+                            <li><a class="dropdown-item" href="index.html#day5">Day 5</a></li>
+                            <li><a class="dropdown-item" href="index.html#day6">Day 6</a></li>
+                        </ul>
+                    </div>
+                    <a href="staff.html" class="nav-link text-white active mx-3" style="font-family: 'Inter', sans-serif; font-size: 1.3rem; font-weight: 500;">
+                        Speakers & Coordinators
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Staff Header -->
+    <section class="staff-header text-center">
+        <div class="container">
+            <h1 class="staff-title">Meet Our Team</h1>
+            <p class="staff-subtitle">The talented individuals who make everything possible</p>
+        </div>
+    </section>
+
+    <!-- Staff Grid -->
+    <section class="py-4">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Staff Member 1 -->
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="staff-card">
+                        <img src="Images/Staff/Screenshot 2025-07-03 212348.png" alt="Staff Member" class="staff-img">
+                        <h3 class="staff-name">Ms. Zoe Diaz De Rivera</h3>
+                        <p class="staff-position">IBPAP Representative</p>
+                    </div>
+                </div>
+
+                <!-- Staff Member 2 -->
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="staff-card">
+                        <img src="./Images/Staff/Screenshot 2025-07-03 212416.png" alt="Staff Member" class="staff-img">
+                        <h3 class="staff-name">Atty. Yves Gonzalez</h3>
+                        <p class="staff-position">Head of Government Affairs and Public Policy</p>
+                    </div>
+                </div>
+
+                <!-- Staff Member 3 -->
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="staff-card">
+                        <img src="./Images/Staff/Screenshot 2025-07-03 212428.png" alt="Staff Member" class="staff-img">
+                        <h3 class="staff-name">Ms. Beatrice Grace Bonjibod</h3>
+                        <p class="staff-position">Brand Marketing Specialist</p>
+                        </div>
+                </div>
+
+                <!-- Staff Member 4 -->
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="staff-card">
+                        <img src="./Images/Staff/Screenshot 2025-07-03 212441.png" alt="Staff Member" class="staff-img">
+                        <h3 class="staff-name">Ralph Vincent Regalado</h3>
+                        <p class="staff-position">Chief Scientist and Head of AI</p>
+                        </div>
+                </div>
+
+                <!-- Staff Member 5 -->
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="staff-card">
+                        <img src="./Images/Staff/Screenshot 2025-07-03 212451.png" alt="Staff Member" class="staff-img">
+                        <h3 class="staff-name">Jazmine Calma</h3>
+                        <p class="staff-position">Senior Engineer for Quality Assurance</p>
+                        </div>
+                    </div>
+
+                <!-- Staff Member 6 -->
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="staff-card">
+                        <img src="./Images/Staff/Screenshot 2025-07-03 212511.png" alt="Staff Member" class="staff-img">
+                        <h3 class="staff-name">Toni-Jan Keith Monserrat</h3>
+                        <p class="staff-position">Senior Principal Engineer for AI and Data</p>
+                    </div>
+                </div>
+
+                <!-- Staff Member 7 -->
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="staff-card">
+                        <img src="./Images/Staff/Screenshot 2025-07-03 213708.png" alt="Staff Member" class="staff-img">
+                        <h3 class="staff-name">Miguel Siriban</h3>
+                        <p class="staff-position">UI/UX Designer and UI Developer</p>
+                    </div>
+                </div>
+
+                <!-- Staff Member 8 -->
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="staff-card">
+                        <img src="./Images/Staff/Screenshot 2025-07-03 212530.png" alt="Staff Member" class="staff-img">
+                        <h3 class="staff-name">Peter Fizelley</h3>
+                        <p class="staff-position">Chief Information Security Officer</p>
+                    </div>
+                </div>
+
+                <!-- Staff Member 9 -->
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="staff-card">
+                        <img src="./Images/Staff/Screenshot 2025-07-03 212521.png" alt="Staff Member" class="staff-img">
+                        <h3 class="staff-name">Matt Farley</h3>
+                        <p class="staff-position">Director of the Infrastructure & Technology Division</p>
+                    </div>
+                </div>
+
+                <!-- Staff Member 10 -->
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="staff-card">
+                        <img src="./Images/Staff/Screenshot 2025-07-03 212539.png" alt="Staff Member" class="staff-img">
+                        <h3 class="staff-name">Stephanie King-Chung Hung</h3>
+                        <p class="staff-position">Chief Information Officer and Director General of ITD</p>
+                    </div>
+                </div>
+
+                <!-- Staff Member 11 -->
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="staff-card">
+                        <img src="./Images/Staff/Screenshot 2025-07-03 213717.png" alt="Staff Member" class="staff-img">
+                        <h3 class="staff-name">Ms. Heidee Enriquez</h3>
+                        <p class="staff-position">CEO of MicroSourcing</p>
+                    </div>
+                </div>
+
+                <!-- Staff Member 12 -->
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="staff-card">
+                        <img src="./Images/Staff/Screenshot 2025-07-03 215616.png" alt="Staff Member" class="staff-img">
+                        <h3 class="staff-name">Mr. Jhon Lloyd Edios</h3>
+                        <p class="staff-position">Coordinator</p>
+                    </div>
+                </div>
+
+                <!-- Staff Member 13 -->
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="staff-card">
+                        <img src="./Images/Staff/Screenshot 2025-07-03 215624.png" alt="Staff Member" class="staff-img">
+                        <h3 class="staff-name">Engr. Marjorie A Rojas</h3>
+                        <p class="staff-position">Coordinator</p>
+                    </div>
+                </div>
+
+                <!-- Staff Member 14 -->
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="staff-card">
+                        <img src="./Images/Staff/Screenshot 2025-07-03 215556.png" alt="Staff Member" class="staff-img">
+                        <h3 class="staff-name">Asso. Prof. Salimar B. Tahil</h3>
+                        <p class="staff-position">Coordinator</p>
+                    </div>
+                </div>
+
+                <!-- Staff Member 15 -->
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="staff-card">
+                        <img src="./Images/Staff/Screenshot 2025-07-03 215606.png" alt="Staff Member" class="staff-img">
+                        <h3 class="staff-name">Mr. Rhamrhem Jafaar</h3>
+                        <p class="staff-position">Coordinator</p>
+                    </div>
+                </div>
+
+                <!-- Staff Member 16 -->
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="staff-card">
+                        <img src="./Images/Staff/Screenshot 2025-07-03 215616.png" alt="Staff Member" class="staff-img">
+                        <h3 class="staff-name">Rafael Santiago</h3>
+                        <p class="staff-position">Cloud Security Specialist</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Alejo's Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
