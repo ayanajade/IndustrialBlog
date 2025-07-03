@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alejo's Blog</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-pink text-white py-3">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <h1 class="blog-title m-0">Alejo's Blog</h1>
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="industrialVisitDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-family: 'Inter', sans-serif; font-size: 1.3rem; font-weight: 500;">
+                        Industrial Visit
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="industrialVisitDropdown">
+                        <li><a class="dropdown-item" href="#day1">Day 1</a></li>
+                        <li><a class="dropdown-item" href="#day2">Day 2</a></li>
+                        <li><a class="dropdown-item" href="#day3">Day 3</a></li>
+                        <li><a class="dropdown-item" href="#day4">Day 4</a></li>
+                        <li><a class="dropdown-item" href="#day5">Day 5</a></li>
+                        <li><a class="dropdown-item" href="#day6">Day 6</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container-fluid px-0">
+        <div class="row g-0">
+            <!-- Main Content Area -->
+            <div class="col-12">
+                <!-- Welcome Carousel -->
+                <div id="welcomeCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="carousel-image" style="background-image: url('./Images/Day 6/IMG_20250613_071320_494@-1201173012.jpg');height: 75vh; background-size: cover; background-position: center;">
+                                <div class="carousel-caption text-start">
+                                    <h2 class="display-4">Welcome to Alejo's Blog</h2>
+                                    <p class="lead">Join me on my journey through the world of industrial visits and beyond.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-image" style="background-image: url('./Images/Day 6/IMG_20250613_072756_405.jpg'); height: 75vh; background-size: cover; background-position: center;">
+                                <div class="carousel-caption text-start">
+                                    <h2 class="display-4">Explore With Me</h2>
+                                    <p class="lead">Discover amazing places and experiences from my travels.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-image" style="background-image: url('./Images/Day 6/IMG_20250614_094309_383@-1522515372.jpg'); height: 75vh; background-size: cover; background-position: center;">
+                                <div class="carousel-caption text-start">
+                                    <h2 class="display-4">Memorable Moments</h2>
+                                    <p class="lead">Capturing the best moments of my adventures.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#welcomeCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#welcomeCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    <div class="carousel-indicators" style="bottom: 20px;">
+                        <button type="button" data-bs-target="#welcomeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#welcomeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#welcomeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                </div> <br>
+
+                <!-- Day 1 Section -->
+                <div id="day1" class="day-section mb-5 px-4">
+                    <div class="day-header mb-4">
+                        <h2 class="day-title" style="font-size: 2.3rem; text-align: center;">Day 1</h2>
+                    </div>
+                    
+                    <div class="row g-4">
+                        <!-- Image on the left -->
+                        <div class="col-md-6" style="height: 80vh;">
+                            <div id="buildingCarousel" class="carousel slide h-100" data-bs-ride="carousel">
+                                <div class="carousel-inner h-100">
+                                    <div class="carousel-item active h-100">
+                                        <img src="./Images/Day 1/IMG_20250608_152954_110.jpg" class="d-block w-100" style="object-fit: cover; object-position: center;">
+                                    </div>    
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 1/received_690754540490938.jpeg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 1/IMG_20250608_154433_100.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 1/IMG_20250608_154442_164.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 1/IMG_20250608_154546_557.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 1/IMG_20250608_160502_238.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 1/received_1257448979086733.jpeg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 1/IMG_20250608_161903_511.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 1/IMG_20250608_163140_875.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 1/received_617408294691991.jpeg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#buildingCarousel" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#buildingCarousel" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#buildingCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Content on the right -->
+                        <div class="col-md-6 d-flex flex-column" style="padding-top: 20px;">
+                            <div class="blog-content">
+                                <p>Day 1: As our industrial visit began, we made our way to Manila—a vibrant blend of old-world charm and modern energy. The city’s lively streets, towering buildings, and bustling atmosphere welcomed us with a sense of adventure. With excitement stirring in the air, we arrived ready to explore, learn, and immerse ourselves in experiences far beyond the classroom walls.</p>
+                                <p>With the ever-spirited Ma'am Melai leading the way, our visit to the Minor Basilica and Metropolitan Cathedral of the Immaculate Conception—more fondly known as the Manila Cathedral—was a journey through grandeur and solemnity, where centuries of faith and artistry stood beautifully preserved</p>
+                                <p>After marveling at its majestic facade and tranquil interior, we ventured inside the historic walls of Intramuros, the old heart of Manila. Strolling through cobbled streets and age-worn buildings, Ma'am Melai shared stories that brought history to life with each step.</p>
+                                <p>The most striking part of the tour was the dungeon hidden deep within Fort Santiago—chilling and humbling, it reminded us of the sacrifices etched into the nation's past. Altogether, the experience was a profound blend of culture, heritage, and emotion.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br
+
+                <!-- Day 2 Section -->
+                <div id="day2" class="day-section mb-5 px-4">
+                    <div class="day-header mb-4">
+                        <h2 class="day-title" style="font-size: 2.3rem; text-align: center;">Day 2</h2>
+                    </div>
+                    
+                    <div class="row g-4">
+                        <!-- Image on the left -->
+                        <div class="col-md-6" style="height: 80vh;">
+                            <div id="buildingCarousel2" class="carousel slide h-100" data-bs-ride="carousel">
+                                <div class="carousel-inner h-100">
+                                    <div class="carousel-item active h-100">
+                                        <img src="./Images/Day 2/1751515541968.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 2/IMG_20250609_122536_988@-1864806417.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 2/1750427451218.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 2/1750427438922.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 2/1750153581262.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 2/IMG_20250609_140117_638.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 2/IMG_20250609_142649_301.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 2/IMG_20250609_162501_848.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 2/IMG_20250609_162250_684.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 2/1750153608929.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#buildingCarousel2" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#buildingCarousel2" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#buildingCarousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel2" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel2" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel2" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel2" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel2" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel2" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Content on the right -->
+                        <div class="col-md-6 d-flex flex-column" style="padding-top: 20px;">
+                            <div class="blog-content">
+                                <p>Day 2: Our second day kicked off with a visit to Foundever, where we were warmly welcomed by their team.</p>
+                                <p>Foundever is a company that specializes in providing innovative solutions for businesses, with a focus on technology and innovation. The team was friendly and welcoming, and they took the time to explain their products and services to us.</p>
+                                <p>During our visit, we had the opportunity to explore their facilities and learn about their products and services. We were impressed by their innovative approach to technology and their commitment to providing high-quality solutions for their clients.</p>
+                                <p>In the afternoon, we headed to Google, where Atty. Yves hosted an engaging session packed with valuable lessons about innovation and professional growth.</p>
+                                <p>We were given workplace tours that offered a glimpse into their dynamic environments and unique cultures—an inspiring experience that showed us how creativity and technology intersect in real-world settings.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 3 Section -->
+                <div id="day3" class="day-section mb-5 px-4">
+                    <div class="day-header mb-4">
+                        <h2 class="day-title" style="font-size: 2.3rem; text-align: center;">Day 3</h2>
+                    </div>
+                    
+                    <div class="row g-4">
+                        <!-- Image on the left -->
+                        <div class="col-md-6" style="height: 80vh;">
+                            <div id="buildingCarousel3" class="carousel slide h-100" data-bs-ride="carousel">
+                                <div class="carousel-inner h-100">
+                                    <div class="carousel-item active h-100">
+                                        <img src="./Images/Day 3/IMG_20250610_100322_197.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 3/IMG_20250610_095725_363.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 3/1750153626552.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 3/1750153663844.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 3/IMG_20250610_125008_187.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 3/IMG_20250610_124702_790.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 3/IMG_20250610_112257_079.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 3/IMG_20250610_135231_281.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 3/1750153682238.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 3/1750153677858.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#buildingCarousel3" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#buildingCarousel3" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#buildingCarousel3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel3" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel3" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel3" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel3" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel3" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel3" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel3" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Content on the right -->
+                        <div class="col-md-6 d-flex flex-column" style="padding-top: 20px;">
+                            <div class="blog-content">
+                                <p>Day 3: Our morning began with a visit to Teleperformance, where we were greeted with warm smiles and a glimpse into the fast-paced world of customer experience and digital services.</p>
+                                <p>The team shared stories about their roles and career journeys, giving us a real sense of how technology and communication come together in their daily work. Beyond learning about the ins and outs of customer service and digital solutions, one of the standout moments was the mock interview session—an exciting hands-on activity that gave us a real taste of what it would be like to apply and work there.</p>
+                                <p>Afterward, we made our way to the serene Manila American Cemetery and Memorial—a peaceful contrast to the city’s buzz, where we paused to reflect on the sacrifices of U.S. soldiers during World War II. The rows of white crosses and lush greenery created a humbling atmosphere.</p>
+                                <p>To wrap up the day, we headed to Kollab, a dynamic tech company known for its innovative approach to digital transformation. Their workplace was buzzing with creativity. It was a day of learning, reflection, and unexpected fun.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 4 Section -->
+                <div id="day4" class="day-section mb-5 px-4">
+                    <div class="day-header mb-4">
+                        <h2 class="day-title" style="font-size: 2.3rem; text-align: center;">Day 4</h2>
+                    </div>
+                    
+                    <div class="row g-4">
+                        <!-- Image on the left -->
+                        <div class="col-md-6" style="height: 80vh;">
+                            <div id="buildingCarousel4" class="carousel slide h-100" data-bs-ride="carousel">
+                                <div class="carousel-inner h-100">
+                                    <div class="carousel-item active h-100">
+                                        <img src="./Images/Day 4/IMG_20250611_092952_005.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 4/IMG_20250611_090800_336.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 4/1750153693226.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 4/1750153798419.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 4/1750153810188.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 4/1750153828311.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 4/1750153833151.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 4/1750153857153.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 4/1750153861533.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 4/1750153868045.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#buildingCarousel4" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#buildingCarousel4" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#buildingCarousel4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel4" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel4" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel4" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel4" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel4" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel4" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel4" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Content on the right -->
+                        <div class="col-md-6 d-flex flex-column" style="padding-top: 20px;">
+                            <div class="blog-content">
+                                <p>Day 4: Our visit to the Asian Development Bank (ADB) was truly unforgettable. From the moment we arrived, we were greeted by some of the friendliest and most welcoming people we’d met throughout the entire trip.</p>
+                                <p>ADB’s mission to support developing countries through financial aid and social programs was inspiring, and learning about their impact made the experience even more meaningful.</p>
+                                <p>Touring their museum, which showcased the rich history and evolution of ADB since its founding in 1966, gave us a deeper appreciation for their global contributions.</p>
+                                <p>In the afternoon, we headed to MicroSourcing, where we had the exciting opportunity to meet their CEO, Haidee Enriquez. Haidee shared her insights on the company’s growth and the impact of technology on their operations.</p>
+                                <p>Her warm and engaging presence made us feel right at home, and the lively atmosphere of their workplace added to the fun. It was a day filled with learning, inspiration, and genuine human connection.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 5 Section -->
+                <div id="day5" class="day-section mb-5 px-4">
+                    <div class="day-header mb-4">
+                        <h2 class="day-title" style="font-size: 2.3rem; text-align: center;">Day 5</h2>
+                    </div>
+                    
+                    <div class="row g-4">
+                        <!-- Image on the left -->
+                        <div class="col-md-6" style="height: 80vh;">
+                            <div id="buildingCarousel5" class="carousel slide h-100" data-bs-ride="carousel">
+                                <div class="carousel-inner h-100">
+                                    <div class="carousel-item active h-100">
+                                        <img src="./Images/Day 5/IMG_20250612_090918_092.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 5/IMG_20250612_090737_3.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 5/IMG_20250612_091331_869.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 5/IMG_20250612_091525_360.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 5/IMG_20250612_091551_363.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 5/IMG_20250612_092007_619.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 5/IMG_20250612_092552_949.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 5/IMG_20250612_092016_882.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 5/IMG_20250612_115927_194.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 5/IMG_20250612_192720_529.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#buildingCarousel5" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#buildingCarousel5" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#buildingCarousel5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel5" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel5" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel5" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel5" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel5" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel5" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel5" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel5" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel5" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Content on the right -->
+                        <div class="col-md-6 d-flex flex-column" style="padding-top: 20px;">
+                            <div class="blog-content">
+                                <p>Day 5: Our trip to Tagaytay was a refreshing escape into cool breezes and stunning scenery.</p>
+                                <p> We began at People’s Park in the Sky, perched high atop Mount Sungay, where the panoramic view was absolutely breathtaking—Mount Taal stood proudly in the distance, framed by rolling clouds and lush greenery. The peaceful atmosphere made it easy to pause and take it all in.  </p>
+                                <p>After soaking up the sights, we headed to Sky Ranch, where the energy shifted to pure excitement. From thrilling rides to carnival games, the park was buzzing with fun.</p>
+                                <p>One of the highlights was riding the Sky Eye, which gave us another incredible view of Taal Lake—this time from a gently swaying gondola. It was a day that balanced serenity and adventure perfectly.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 6 Section -->
+                <div id="day6" class="day-section mb-5 px-4">
+                    <div class="day-header mb-4">
+                        <h2 class="day-title" style="font-size: 2.3rem; text-align: center;">Day 6</h2>
+                    </div>
+                    
+                    <div class="row g-4">
+                        <!-- Image on the left -->
+                        <div class="col-md-6" style="height: 80vh;">
+                            <div id="buildingCarousel6" class="carousel slide h-100" data-bs-ride="carousel">
+                                <div class="carousel-inner h-100">
+                                    <div class="carousel-item active h-100">
+                                        <img src="./Images/Day 6/IMG_20250613_070755_065.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 6/IMG_20250613_053436_313.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 6/IMG_20250613_053547_721.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 6/IMG_20250613_053737_505.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 6/IMG_20250613_071202_492.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 6/IMG_20250613_071232_215.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 6/IMG_20250613_072720_938.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 6/IMG_20250613_072434_765.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 6/IMG_20250613_072227_701.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 6/IMG_20250613_072756_405.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 6/IMG_20250613_073947_182.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 6/1750153961627.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 6/1751520881017.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 6/1750154000770.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 6/1751520827219.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 6/IMG_20250613_130636_356.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 6/1750153974338.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 6/IMG_20250613_131014_945.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 6/IMG_20250613_132123_746.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="./Images/Day 6/IMG_20250613_125508_013.jpg" class="d-block w-100 h-100" style="object-fit: cover; object-position: center;">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#buildingCarousel6" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#buildingCarousel6" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#buildingCarousel6" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel6" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel6" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel6" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel6" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel6" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel6" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel6" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel6" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel6" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel6" data-bs-slide-to="10" aria-label="Slide 11"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel6" data-bs-slide-to="11" aria-label="Slide 12"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel6" data-bs-slide-to="12" aria-label="Slide 13"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel6" data-bs-slide-to="13" aria-label="Slide 14"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel6" data-bs-slide-to="14" aria-label="Slide 15"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel6" data-bs-slide-to="15" aria-label="Slide 16"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel6" data-bs-slide-to="16" aria-label="Slide 17"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel6" data-bs-slide-to="17" aria-label="Slide 18"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel6" data-bs-slide-to="18" aria-label="Slide 19"></button>
+                                    <button type="button" data-bs-target="#buildingCarousel6" data-bs-slide-to="19" aria-label="Slide 20"></button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Content on the right -->
+                        <div class="col-md-6 d-flex flex-column" style="padding-top: 20px;">
+                            <div class="blog-content">
+                                <p>Day 6: Our final day brought us to the cool highlands of Baguio, starting with a visit to the Strawberry Farm in La Trinidad. Surrounded by rows of vibrant strawberry plants, we picked up sweet souvenirs—from jams and keychains to strawberry taho that was too good to pass up.</p>
+                                <p>Next, we explored the peaceful Bell Church, a Taoist temple with ornate gates and tranquil gardens that offered a quiet moment of reflection.</p>
+                                <p>n our way back, we made a quick stop at The Mansion, the official summer residence of the President of the Philippines. Its elegant gates and manicured grounds were picture-perfect, and we even got to meet a friendly St. Bernard lounging nearby—a surprise highlight!</p>
+                                <p>Then, in the afternoon, we visited the Philippine Military Academy, where we met several cadets and admired the scenic campus—from towering pine trees to a whimsical tree house. We wrapped up the day taking photos beside helicopters on display, capping off our journey with a sense of wonder and fulfillment.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Alejo's Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
